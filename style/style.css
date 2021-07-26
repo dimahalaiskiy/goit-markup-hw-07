@@ -195,7 +195,7 @@ ul,ol {
 
 /******* HERO *******/
 
-.conteiner-hero {
+.container-hero {
     max-width: 1600px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/bg.jpg);
@@ -205,14 +205,14 @@ ul,ol {
     background-size: cover;
 }
 
-.container-hero-heading {
+.container-hero__heading {
     padding-top: 200px;
     width: 700px;
     margin: 0 auto;
     padding-bottom: 200px;
 }
 
-.hero-heading {
+.container-hero__hero-heading {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -222,7 +222,7 @@ ul,ol {
     letter-spacing: 0.06em;
 }
 
-.hero-bottom {
+.container-hero__hero-bottom {
     display: block;
     margin: 0 auto;
     margin-top: 30px;
