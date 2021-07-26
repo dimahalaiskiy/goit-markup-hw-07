@@ -45,6 +45,17 @@ ul,ol {
 
 
 /******* MAIN COMPONENTS *******/
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
 .btn-style {
     background: var(--focus-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -84,21 +95,14 @@ ul,ol {
     padding-right: 15px;
     margin: 0 auto;
 }
-
-
-
-
-
 /******* END MAIN COMPONENTS *******/
 
 /******* HEADER *******/
-
 
 .header-menu {
     background-color: #FFFFFF;
     
 }
-
 
 .header-menu__container {
     display: flex;
@@ -107,21 +111,11 @@ ul,ol {
     padding-bottom: 25px;
 }
 
-.logo {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: var(--main-color);
-}
-
 .header__logo {
     margin-right: 95px;
 }
 
-.logo__theme {
+.logo_theme_blue {
     color: var(--focus-color);
 }
 
@@ -396,6 +390,9 @@ ul,ol {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.stuff__icon-list {
     margin-top: 16px;
     padding-bottom: 30px;
 }
@@ -417,19 +414,16 @@ ul,ol {
 }
 
 .social-icon-list__icon { 
-    fill: #AFB1B8;
-    width: 20px;
+    width: 20px; 
     height: 20px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #AFB1B8;
 }
 
 .social-icon-list__link:hover .social-icon-list__icon,        
 .social-icon-list__link:focus .social-icon-list__icon {        
     fill: #ffffff;
 }
-
-
-
 
 /******* END OUR TEAM *******/
 
@@ -439,15 +433,9 @@ ul,ol {
     margin: 0 auto;
 }
 
-.our-clients-heading {
+.our-clients__heading { 
     padding-top: 94px;
     margin-bottom: 50px;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 42px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
 }
 
 .our-clients-list {
@@ -459,13 +447,13 @@ ul,ol {
     
 }
 
-.our-clients-list-item{
+.our-clients-list__item{
     margin-top: 30px;
     margin-left: 30px;
 
 }
 
-.our-clients-list-link {
+.our-clients-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -476,28 +464,29 @@ ul,ol {
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-clients-icon-style {
+.our-clients-list__icon {
     width: 106px;
     height: 60px;
     fill: #AFB1B8;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.our-clients-list-link:hover,
-.our-clients-list-link:focus {
+.our-clients-list__link:hover,
+.our-clients-list__link:focus {
     border-color: #2196F3;
     cursor: pointer;
 }
 
-.our-clients-list-link:hover .our-clients-icon-style, 
-.our-clients-list-link:focus .our-clients-icon-style {
+.our-clients-list__link:hover .our-clients-list__icon, 
+.our-clients-list__link:focus .our-clients-list__icon {
     fill: #2196F3;
 }
 
+/******* END OUR CLIENTS *******/
 
 /******* FOOTER *******/
 
-.footer-container {
+.footer {
     background-color: #2F303A;
     margin: 0 auto;
     padding-top: 60px;
@@ -512,36 +501,16 @@ ul,ol {
     margin-left: -70px;
 }
 
-.footer-list-item {
+.footer-list__item { 
     display: block;
-    margin-left: 70px;
+    margin-left: 75px;
 }
 
-.footer-paragraph {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+.logo_color_white {
     color: #FFFFFF;
 }
 
-.footer-logo-style {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: #FFFFFF;
-}
-
-.footer-text-logo-style {
-    color: var(--focus-color);
-}
-
-
-.footer-contact-list-item {
+.footer-contact-list__item {
     margin-top: 18px;
 }
 
@@ -554,12 +523,7 @@ ul,ol {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-contact-list-link:hover,
-.footer-contact-list-link:focus {
-    color: var(--focus-color);
-}
-
-.footer-list-link-adress {
+.footer-contact-list__adress {
     font-weight: normal;
     font-size: 14px;
     line-height: 1.77;
@@ -568,11 +532,17 @@ ul,ol {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
-.footer-list-link-adress:hover,
-.footer-list-link-adress:focus {
+.footer-contact-list__adress:hover,
+.footer-contact-list__adress:focus {
     color: var(--focus-color);
 }
-.footer-contact-list-link{
+
+.footer-contact-list__link:hover,
+.footer-contact-list__link:focus {
+    color: var(--focus-color);
+}
+
+.footer-contact-list__link{
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -580,33 +550,36 @@ ul,ol {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-social-icon-list{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.footer__paragraph {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+.footer__icon-list{
     margin-top: 20px;
     padding-bottom: 30px;
 }
 
-.footer-social-icon-item:not(:last-child) {
-    margin-right: 10px;
+.social-icon-list__item:not(:last-child) {
+    margin-right: 10px; 
 }
 
-.footer-social-icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
+.footer__icon-link {
     background: rgba(255, 255, 255, 0.1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-social-item-icon {
-    fill: #FFFFFF;
+.social-icon-list__icon {
     width: 20px;
     height: 20px;
+}
+
+.footer__icon-fill-white {
+    fill: #ffffff;
 }
 
 .footer-social-icon:hover,
@@ -614,11 +587,11 @@ ul,ol {
     background-color: #2196F3;
 }
 
-.footer-form-position {
-    margin-left: 93px;
+.footer__form-position {
+    margin-left: 90px;
 }
 
-.footer-form-paragraph {
+.footer__form-paragraph {
     margin-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -628,12 +601,12 @@ ul,ol {
     color: #FFFFFF;
 }
 
-.footer-form {
+.footer__form {
     display: flex;
     align-items: center;
 }
 
-.footer-form-mail {
+.footer-form__mail {
     width: 358px;
     background-color: #2F303A;
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -643,27 +616,27 @@ ul,ol {
     margin-right: 12px;
     color: #ffffff;
 }
-.footer-form-mail:focus {
+.footer-form__mail:focus {
     outline: none;
     border: 1px solid #2196F3;
 }
 
-.footer-form-mail::placeholder {
+.footer-form__mail::placeholder {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-.btn-footer-form-style {
+.footer-form__button { 
     text-align: left;
 }
 
-.btn-form-footer-text-position {
+.footer-form__text-position {
     position: relative;
     margin-left: 28px;
 }
-.footer-svg-form-button {
+.footer-form__button-svg {
     position: absolute;
     width: 24px;
     height: 24px;
@@ -678,7 +651,7 @@ ul,ol {
 /******* BACKDROP *******/
 
 
-.backdrop-main-button {
+.backdrop {
     position: fixed;
     top: 0;
     left: 0;
@@ -690,7 +663,7 @@ ul,ol {
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-main-button {
+.backdrop__button {
     position: absolute;
     width: 528px;
     top: 50%;
@@ -701,7 +674,7 @@ ul,ol {
     transform: translate(-50%, -50%);
 }
 
-.backdrop-quit-button {
+.backdrop__button-style {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -717,14 +690,14 @@ ul,ol {
     cursor: pointer;
 }
 
-.backdrop-quit-button-svg {
+.backdrop__button-svg {
     width: 11px;
     height: 11px;
     fill: var(--main-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop-quit-button:hover .backdrop-quit-button-svg{
+.backdrop__button-style:hover .backdrop__button-svg{
     fill: var(--focus-color);
 }
 
@@ -734,7 +707,7 @@ ul,ol {
     pointer-events: none;
 }
 
-.modal-form-head {
+.modal-form__heading {
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
