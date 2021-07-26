@@ -91,15 +91,14 @@ ul,ol {
 }
 
 
-.header-container {
+.header-menu__container {
     display: flex;
     align-items: center;
     padding-top: 25px;
     padding-bottom: 25px;
 }
 
-.logo-style {
-    margin-right: 95px;
+.logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -109,22 +108,29 @@ ul,ol {
     color: var(--main-color);
 }
 
-.text-logo-style {
+.header__logo {
+    margin-right: 95px;
+}
+
+.logo__theme {
     color: var(--focus-color);
 }
 
-.social-links-list {
-    display: flex;
-}
-.social-contakt-list {
+.social-links__list {
     display: flex;
 }
 
-.social-links-list-item:not(:last-child) {
+
+.social-links__item:not(:last-child) {
     margin-right: 50px;
 }
 
-.social-links-list-link {
+.social-links__item {
+    display: flex;
+    position: relative;
+}
+
+.social-links__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -133,13 +139,8 @@ ul,ol {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.social-links-list-item {
-    display: flex;
-    position: relative;
-}
-
-.social-links-list-link:hover,
-.social-links-list-link:focus,
+.social-links__link:hover, 
+.social-links__link:focus, 
 .is-current {
     color: var(--focus-color);
 }
@@ -155,7 +156,22 @@ ul,ol {
     bottom: -32px;
 } 
 
-.social-contakt-list-link {
+.social-contakt-list {
+    display: flex;
+    margin-left: auto;
+}
+
+.social-contakt-list__item:not(:first-child) {
+    margin-left: 50px;
+}
+
+.social-contakt-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-contakt-list__link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -164,31 +180,16 @@ ul,ol {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-contakt-list-link:hover,
-.social-contakt-list-link:focus {
+.social-contakt-list__link:hover, 
+.social-contakt-list__link:focus { 
     color: var(--focus-color);
 }
 
-.social-contakt-list {
-    margin-left: auto;
-}
-
-.social-contakt-list-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.social-links-contakt-list-item:not(:first-child) {
-    margin-left: 50px;
-}
-
-.social-contakt-icon {
+.social-contakt-list__icon { 
     margin-right: 10px;
-}
-
-.social-contakt-icon {
     fill: currentColor;
 }
+
 
 /******* END HEADER *******/
 
