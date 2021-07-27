@@ -707,6 +707,13 @@ ul,ol {
     pointer-events: none;
 }
 
+.modal-form {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .modal-form__heading {
     margin-bottom: 12px;
     font-weight: 700;
@@ -716,14 +723,8 @@ ul,ol {
     letter-spacing: 0.03em;
     color: var(--main-color);
 }
-.modal-form {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    
-}
 
-.modal-form-field-paragraph {
+.modal-form__paragraph {
     margin-bottom: 4px;
     font-weight: 400;
     font-size: 12px;
@@ -732,8 +733,13 @@ ul,ol {
     color: var(--paragraph-color);
 }
 
+.modal-form__icon-position {
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+}
 
-.modal-form-input {
+.modal-form__input { 
     padding-left: 42px;
     width: 100%;
     height: 40px;
@@ -742,24 +748,18 @@ ul,ol {
     transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-input:focus {
+.modal-form__input:focus {
     outline: none;
     border: 1px solid var(--focus-color);
     border-radius: 4px;
 }
 
-.modal-form-input:focus + .backdrop-icon-links
-.backdrop-icon {
+.modal-form__input:focus + .modal-form__icon-links 
+.modal-form__icon {
     fill: var(--focus-color);
 }
 
-.backdrop-icon-position {
-    margin-bottom: 10px;
-    display: block;
-    position: relative;
-}
-
-.backdrop-icon-links {
+.modal-form__icon-links {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -767,14 +767,23 @@ ul,ol {
     display: block;
 }
 
-.backdrop-icon {
+.modal-form__icon {
     fill: var(--main-color);
     width: 18px;
     height: 18px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.modal-form-textarea {
+.modal-form__textarea-heading {
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: var(--paragraph-color);
+}
+
+.modal-form__textarea {
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -788,13 +797,13 @@ ul,ol {
     color: var(--main-color);
 }
 
-.modal-form-textarea:focus {
+.modal-form__textarea:focus {
     outline: none;
     border: 1px solid var(--focus-color);
     border-radius: 4px;
 }
 
-.modal-form-textarea::placeholder {
+.modal-form__textarea::placeholder {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.14;
@@ -802,16 +811,7 @@ ul,ol {
     color: rgba(117, 117, 117, 0.5);
 }
 
-.modal-textarea-head {
-    margin-bottom: 4px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.14;
-    letter-spacing: 0.01em;
-    color: var(--paragraph-color);
-}
-
-.modal-form-checkbox-label {
+.modal-form__checkbox-label {
     display: flex;
     padding-left: 13px;
     margin-bottom: 30px;
@@ -824,10 +824,10 @@ ul,ol {
     color: var(--paragraph-color);
 }
 
-.modal-checkbox-text-position {
+.modal-checkbox__text-position {
     margin-left: 8px;
 }
-.modal-form-checkbox-label::before {
+.modal-form__checkbox-label::before {
     content: "";
     display: block;
     cursor: pointer;
@@ -836,15 +836,15 @@ ul,ol {
     background-image: url("../img/checkbox/icon-checkbox.svg");
 }
 
-.modal-form-input-checkbox:checked + .modal-form-checkbox-label::before {
+.modal-form__checkbox-input:checked + .modal-form__checkbox-label::before {
     background-image: url("../img/checkbox/icon-checkbox-check.svg");
 }
 
-.modal-checkbox-link-color {
+.modal-checkbox__link-color {
     color: var(--focus-color);
 }
 
-.modal-form-btn {
+.modal-form__btn {
     margin: 0 auto;
 }
 
@@ -855,11 +855,11 @@ ul,ol {
 /******* PAGE !PORTFOLIO! *******/ 
 
 
-.header-border {
+.header__border {
     border-top: 1px solid #ECECEC;
 }
 
-.catalog-button-list {
+.portfolio-nav__list {
     padding-top: 94px;
     margin-bottom: 50px;
     display: flex;
@@ -867,10 +867,10 @@ ul,ol {
     max-width: 516;
 }
 
-.catalog-button-list-item {
+.portfolio-nav__item {
     margin-left: 8px;
 }
-.portfolio-cataloge-buttom {
+.portfolio-nav__buttom {
     padding: 6px 22px;
     font-weight: 500;
     font-size: 16px;
@@ -887,8 +887,8 @@ ul,ol {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.portfolio-cataloge-buttom:hover,
-.portfolio-cataloge-buttom:focus {
+.portfolio-nav__buttom:hover,
+.portfolio-nav__buttom:focus {
     background: var(--focus-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     color: #FFFFFF;
@@ -902,28 +902,28 @@ ul,ol {
     padding-bottom: 94px;
 }
 
-.catalog-list-item {
+.catalog-list__item {
     margin-top: 30px;
     margin-left: 30px;
 }
 
-.catalog-border-list-item {
-    margin: 0;
-}
-
-.catalog-border-list-item-img {
-    display: block;
-}
-
-.catalog-list-link {
+.catalog-list__link {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
 }
-.catalog-list-link:hover,
-.catalog-list-link:focus {
+.catalog-list__link:hover,
+.catalog-list__link:focus {
     display: block;
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
+.catalog-list__border {
+    margin: 0;
+}
+
+.catalog-list__border-img {
+    display: block;
 }
 
 .overlay-catalog-img-position {
@@ -932,15 +932,7 @@ ul,ol {
     display: block;
 }
 
-.overlay-portfolio-catalog-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.03em;
-    color: #FFFFFF;
-}
-
-.overlay-portfolio-catalog-img {
+.catalog-list__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -951,22 +943,28 @@ ul,ol {
     background-color: rgba(33, 150, 243, 0.9);
     padding: 63px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
 }
 
-.catalog-border-list-item:hover
-.overlay-portfolio-catalog-img {
+.catalog-list__border:hover
+.catalog-list__overlay {
     transform: translateY(0%);
 }
 
 
-.catalog-list-item-text {
+.catalog-list__text-position {
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     border-top: none;
     padding: 20px 24px;
 }
 
-.catalog-list-item-heading {
+.catalog-list__heading {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -974,17 +972,13 @@ ul,ol {
     color: var(--main-color);
 }
 
-.catalog-list-item-paragraph {
+.catalog-list__paragraph {
     margin-top: 5px;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--paragraph-color);
-}
-
-.catalog-list-link {
-    text-decoration: none;
 }
 
 /******* END PAGE !PORTFOLIO! *******/ 

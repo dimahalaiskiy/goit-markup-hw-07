@@ -385,6 +385,7 @@
         </ul>
         </div>
     </footer>
+    <!-- BACKDROP -->
     <div class="backdrop is-hidden" data-modal>
         <div class="backdrop__button">
             <button type="button" class="backdrop__button-style" data-modal-close>
@@ -394,49 +395,49 @@
             </button>
             <form class="modal-form">
                 <p class="modal-form__heading">Оставьте свои данные, мы вам перезвоним</p>
-                <label class="modal-form-field">
-                    <p class="modal-form-field-paragraph">Имя</p>
-                    <span class="backdrop-icon-position">
-                    <input class="modal-form-input" type="text" name="user-name" required minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кирилицы или латинского алфавита">
-                    <a href="#" class="backdrop-icon-links">
-                    <svg class="backdrop-icon">
+                <label class="modal-form__field">
+                    <p class="modal-form__paragraph">Имя</p>
+                    <span class="modal-form__icon-position">
+                    <input class="modal-form__input" type="text" name="user-name" required minlength="2" pattern="[a-zA-Zа-яёА-ЯЁ]+" title="Имя должно содержать символы кирилицы или латинского алфавита">
+                    <a href="#" class="modal-form__icon-links">
+                    <svg class="modal-form__icon">
                         <use href="img/icons.svg#icon-person-form"></use>
                     </svg>
                     </a>
                     </span>
                 </label>
-                <label class="modal-form-field">
-                    <p class="modal-form-field-paragraph">Телефон</p>
-                <span class="backdrop-icon-position">
-                    <input class="modal-form-input" type="tel" name="user-tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="063-000-00-00">
-                    <a href="#" class="backdrop-icon-links">
-                    <svg class="backdrop-icon">
+                <label class="modal-form__field">
+                    <p class="modal-form__paragraph">Телефон</p>
+                <span class="modal-form__icon-position">
+                    <input class="modal-form__input" type="tel" name="user-tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="063-000-00-00">
+                    <a href="#" class="modal-form__icon-links">
+                    <svg class="modal-form__icon">
                         <use href="img/icons.svg#icon-phone-form"></use>
                     </svg>
                     </a>
                 </span>
                 </label>
-                <label class="modal-form-field">
-                    <p class="modal-form-field-paragraph">Почта</p>
-                <span class="backdrop-icon-position">
-                    <input class="modal-form-input" type="email" name="user-mail" required>
-                    <a href="#" class="backdrop-icon-links">
-                    <svg class="backdrop-icon">
+                <label class="modal-form__field">
+                    <p class="modal-form__paragraph">Почта</p>
+                <span class="modal-form__icon-position">
+                    <input class="modal-form__input" type="email" name="user-mail" required>
+                    <a href="#" class="modal-form__icon-links">
+                    <svg class="modal-form__icon">
                         <use href="img/icons.svg#icon-email-form"></use>
                     </svg>
                     </a>
                 </span>
                 </label>
-                <label сlass="modal-form-field">
-                    <p class="modal-textarea-head">Комментарий</p>
-                    <textarea class="modal-form-textarea" name="user-comments" placeholder="Введите текст"></textarea>
+                <label сlass="modal-form__field">
+                    <p class="modal-form__textarea-heading">Комментарий</p>
+                    <textarea class="modal-form__textarea" name="user-comments" placeholder="Введите текст"></textarea>
                 </label>
-                    <input class="modal-form-input-checkbox visually-hidden" type="checkbox" id="modal-checkbox">
-                    <label class="modal-form-checkbox-label" for="modal-checkbox">
-                        <span class="modal-checkbox-text-position">Соглашаюсь с рассылкой и принимаю&nbsp;
-                        </span><a class="modal-checkbox-link-color" href="#">Условия договора</a>
+                    <input class="modal-form__checkbox-input visually-hidden" type="checkbox" id="modal-checkbox">
+                    <label class="modal-form__checkbox-label" for="modal-checkbox">
+                        <span class="modal-checkbox__text-position">Соглашаюсь с рассылкой и принимаю&nbsp;
+                        </span><a class="modal-checkbox__link-color" href="#">Условия договора</a>
                     </label>
-                <button class="btn-style modal-form-btn" type="submit" >Отправить</button>
+                <button class="btn-style modal-form__btn" type="submit" >Отправить</button>
             </form>
         </div>
     </div>
