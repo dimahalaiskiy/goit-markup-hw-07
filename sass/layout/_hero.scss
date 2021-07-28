@@ -16,9 +16,7 @@
 }
 
 .container-hero__hero-heading {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    @include font(44px, 900, 60px);
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;

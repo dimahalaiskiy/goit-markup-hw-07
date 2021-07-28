@@ -5,9 +5,7 @@
 
 .stuff__heading {
     text-align: center;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    @include font(36px, 700, 42px);
     letter-spacing: 0.03em;
     color: var(--main-color);
 }
@@ -34,18 +32,14 @@
 .stuff-list__heading {
     margin-top: 20px;
     text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
+    @include font(16px, 500, 19px);
     letter-spacing: 0.03em;
     color: var(--main-color);
 }
 
 .stuff-list__paragraph {
     margin-top: 10px;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;
+    @include font(16px, 400, 19px);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--paragraph-color);

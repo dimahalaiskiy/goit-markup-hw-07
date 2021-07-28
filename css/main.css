@@ -78,8 +78,8 @@ ul, ol {
 
 .logo {
   font-family: 'Raleway', sans-serif;
-  font-size: 26px;
   font-weight: 700;
+  font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
@@ -93,7 +93,10 @@ ul, ol {
 .heading {
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.17;
+  line-height: 0.83;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -161,8 +164,8 @@ ul, ol {
 }
 
 .social-links__link {
-  font-size: 14px;
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-color);
@@ -187,8 +190,8 @@ ul, ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
   font-weight: 500;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--paragraph-color);
@@ -222,8 +225,8 @@ ul, ol {
 }
 
 .container-hero__hero-heading {
-  font-size: 44px;
   font-weight: 900;
+  font-size: 44px;
   line-height: 1.36;
   text-align: center;
   color: #FFFFFF;
@@ -307,9 +310,9 @@ ul, ol {
 }
 
 .benefits-img-list__overlay {
-  font-size: 14px;
   font-weight: 700;
-  line-height: 1.14;
+  font-size: 14px;
+  line-height: 16px;
   text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -337,9 +340,9 @@ ul, ol {
 
 .stuff__heading {
   text-align: center;
-  font-size: 36px;
   font-weight: 700;
-  line-height: 1.17;
+  font-size: 36px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
@@ -366,18 +369,18 @@ ul, ol {
 .stuff-list__heading {
   margin-top: 20px;
   text-align: center;
-  font-size: 16px;
   font-weight: 500;
-  line-height: 1.19;
+  font-size: 16px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
 
 .stuff-list__paragraph {
   margin-top: 10px;
-  font-size: 16px;
   font-weight: 400;
-  line-height: 1.19;
+  font-size: 16px;
+  line-height: 1.18;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
@@ -467,8 +470,8 @@ ul, ol {
 }
 
 .footer-contact-list-link {
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #FFFFFF;
@@ -476,9 +479,9 @@ ul, ol {
 }
 
 .footer-contact-list__adress {
+  font-weight: normal;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 1.71;
+  line-height: 1.77;
   letter-spacing: 0.03em;
   color: #FFFFFF;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -489,8 +492,8 @@ ul, ol {
 }
 
 .footer-contact-list__link {
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
@@ -501,8 +504,8 @@ ul, ol {
 }
 
 .footer__paragraph {
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -542,8 +545,8 @@ ul, ol {
 
 .footer__form-paragraph {
   margin-bottom: 20px;
-  font-size: 14px;
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
@@ -572,8 +575,8 @@ ul, ol {
 }
 
 .footer-form__mail::placeholder {
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
@@ -662,8 +665,8 @@ ul, ol {
 
 .modal-form__heading {
   margin-bottom: 12px;
-  font-size: 20px;
   font-weight: 700;
+  font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
@@ -672,9 +675,9 @@ ul, ol {
 
 .modal-form__paragraph {
   margin-bottom: 4px;
-  font-size: 12px;
   font-weight: 400;
-  line-height: 1.17;
+  font-size: 12px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--paragraph-color);
 }
@@ -721,9 +724,9 @@ ul, ol {
 
 .modal-form__textarea-heading {
   margin-bottom: 4px;
-  font-size: 12px;
   font-weight: 400;
-  line-height: 1.17;
+  font-size: 12px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--paragraph-color);
 }
@@ -735,9 +738,9 @@ ul, ol {
   border-radius: 4px;
   resize: none;
   padding: 12px 16px;
-  font-size: 12px;
   font-weight: 400;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: var(--main-color);
 }
@@ -749,9 +752,9 @@ ul, ol {
 }
 
 .modal-form__textarea::placeholder {
-  font-size: 12px;
   font-weight: 400;
-  line-height: 1.17;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
@@ -762,8 +765,8 @@ ul, ol {
   margin-bottom: 30px;
   align-items: center;
   padding-top: 20px;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
@@ -812,9 +815,9 @@ ul, ol {
 
 .portfolio-nav__buttom {
   padding: 6px 22px;
-  font-size: 16px;
   font-weight: 500;
-  line-height: 1.63;
+  font-size: 16px;
+  line-height: 1.65;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-color);
@@ -880,9 +883,9 @@ ul, ol {
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  font-size: 18px;
   font-weight: 400;
-  line-height: 1.56;
+  font-size: 18px;
+  line-height: 1.55;
   letter-spacing: 0.03em;
   color: #FFFFFF;
 }
@@ -899,8 +902,8 @@ ul, ol {
 }
 
 .catalog-list__heading {
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-color);
@@ -908,8 +911,8 @@ ul, ol {
 
 .catalog-list__paragraph {
   margin-top: 5px;
-  font-size: 16px;
   font-weight: 400;
+  font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--paragraph-color);
