@@ -101,10 +101,10 @@
         cursor: pointer;
         width: 16px;
         height: 15px;
-        background-image: url("../../img/checkbox/icon-checkbox.svg");
+        background-image: url("../img/checkbox/icon-checkbox.svg");
     }
     .modal-form__checkbox-input:checked + &::before {
-        background-image: url("../../img/checkbox/icon-checkbox-check.svg");
+        background-image: url("../img/checkbox/icon-checkbox-check.svg");
     }
 }
 
