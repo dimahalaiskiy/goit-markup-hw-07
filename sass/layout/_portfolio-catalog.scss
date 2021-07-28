@@ -24,10 +24,6 @@
 
 .catalog-list__border {
     margin: 0;
-    &:hover
-    .catalog-list__overlay {
-        transform: translateY(0%);
-    }
 }
 
 .catalog-list__border-img {
@@ -56,6 +52,9 @@
     line-height: 1.55;
     letter-spacing: 0.03em;
     color: #FFFFFF;
+    .catalog-list__border:hover & {
+        transform: translateY(0%);
+    }
 }
 
 .catalog-list__text-position {
