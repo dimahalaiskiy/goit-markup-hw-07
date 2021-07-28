@@ -14,17 +14,20 @@
 .catalog-list__link {
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
-}
-
-.catalog-list__link:hover,
-.catalog-list__link:focus {
-    display: block;
-    cursor: pointer;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    &:hover,
+    &:focus {
+        display: block;
+        cursor: pointer;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
 }
 
 .catalog-list__border {
     margin: 0;
+    &:hover
+    .catalog-list__overlay {
+        transform: translateY(0%);
+    }
 }
 
 .catalog-list__border-img {
@@ -48,19 +51,12 @@
     background-color: rgba(33, 150, 243, 0.9);
     padding: 63px 24px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
     font-weight: 400;
     font-size: 18px;
     line-height: 1.55;
     letter-spacing: 0.03em;
     color: #FFFFFF;
 }
-
-.catalog-list__border:hover
-.catalog-list__overlay {
-    transform: translateY(0%);
-}
-
 
 .catalog-list__text-position {
     background: #FFFFFF;

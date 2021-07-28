@@ -61,10 +61,9 @@
     margin-top: 0px;
     margin-left: 30px;
     display: block;
-}
-
-.benefits-img-list__item:hover .benefits-img-list__overlay { 
-    transform: translateY(0%);
+    &:hover .benefits-img-list__overlay { 
+        transform: translateY(0%);
+    }
 }
 
 .benefits-img-list__position {
